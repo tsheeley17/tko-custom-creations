@@ -1,0 +1,41 @@
+---
+import { siteConfig } from "@/config/site";
+import { getOrderedCategories } from "@/lib/content";
+import SocialLinks from "@/components/SocialLinks.astro";
+
+const categories = (await getOrderedCategories()).filter((category) => category.data.featured).slice(0, 6);
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h2>{siteConfig.businessName}</h2>
+      <p>{siteConfig.shortDescription}</p>
+      <p class="footer-note">Checkout is completed securely through Etsy.</p>
+    </section>
+    <section>
+      <h2>Shop</h2>
+      <ul>
+        <li><a href="/shop/">All Products</a></li>
+        {categories.map((category) => <li><a href={`/shop/${category.data.slug}/`}>{category.data.name}</a></li>)}
+      </ul>
+    </section>
+    <section>
+      <h2>Help</h2>
+      <ul>
+        <li><a href="/custom-orders/">Custom Orders</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href={siteConfig.etsyShopUrl} target="_blank" rel="noopener noreferrer">Etsy Shop</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Connect</h2>
+      <SocialLinks />
+      <p><a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a></p>
+    </section>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {new Date().getFullYear()} {siteConfig.businessName}. All rights reserved.</p>
+  </div>
+</footer>

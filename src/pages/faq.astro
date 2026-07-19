@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import FAQAccordion from "@/components/FAQAccordion.astro";
+
+const faqs = [
+  ["Where do I place my order?", "Orders are placed through Etsy. Product pages link to the relevant Etsy listing when the listing is ready."],
+  ["Why does checkout take place on Etsy?", "Etsy handles the ordering and secure checkout process, including current listing options, payment, shipping details, and order messages."],
+  ["Are products made to order?", "Some products may be made to order. Check the individual Etsy listing for current processing times and availability."],
+  ["Can colors be customized?", "Color options vary by product and material. Review the Etsy listing or send a message before ordering."],
+  ["Can dimensions or layouts be changed?", "Some dimensions or layouts may be adjustable depending on the design and production schedule."],
+  ["Can you engrave a custom logo?", "Logo engraving may be possible when the customer has permission to use the artwork and the design is suitable for the material."],
+  ["Do you sell digital files?", "Availability of digital files depends on the specific product. Check the Etsy shop or message before assuming a file is available."],
+  ["What materials are used?", "Materials vary by product. Review the product page and Etsy listing for current material details."],
+  ["How should 3D-printed products be cared for?", "Use gentle cleaning and avoid harsh conditions unless the specific listing says otherwise."],
+  ["Are products heat resistant?", "Material limitations vary. 3D-printed products should not be left in excessively hot environments unless the specific listing states that the material is suitable."],
+  ["Can I request a bulk order?", "Bulk requests may be available depending on quantity, materials, and schedule. Send a message with the details."],
+  ["How do shipping and returns work?", "Current shipping, processing, and return details are maintained on Etsy for each listing."],
+  ["How do I contact TKO Custom Creations?", "Use Etsy messages, the business email, or social links on the contact page."],
+].map(([question, answer]) => ({ question, answer }));
+---
+
+<BaseLayout title="FAQ | TKO Custom Creations" description="Answers to common questions about ordering, Etsy checkout, customization, materials, care, shipping, returns, and contacting TKO Custom Creations.">
+  <section class="page-hero compact">
+    <div class="container">
+      <p class="eyebrow">FAQ</p>
+      <h1>Common Questions</h1>
+      <p>For the most current price, processing time, shipping, return, and variation details, review the individual Etsy listing.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container narrow">
+      <FAQAccordion faqs={faqs} />
+    </div>
+  </section>
+</BaseLayout>

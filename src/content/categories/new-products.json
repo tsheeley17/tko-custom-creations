@@ -1,0 +1,11 @@
+{
+  "name": "New Products",
+  "slug": "new-products",
+  "shortDescription": "Recently added products and fresh custom ideas.",
+  "fullDescription": "See the latest products added to the TKO Custom Creations catalog.",
+  "image": "../../assets/categories/new-products.jpg",
+  "featured": true,
+  "order": 90,
+  "seoTitle": "New Products | TKO Custom Creations",
+  "seoDescription": "Browse newly added TKO Custom Creations products."
+}

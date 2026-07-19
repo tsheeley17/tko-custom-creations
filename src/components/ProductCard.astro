@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import EtsyButton from "@/components/EtsyButton.astro";
+import { isPlaceholderEtsyUrl } from "@/lib/content";
+
+const { product } = Astro.props;
+const data = product.data;
+const canOrder = data.status === "active" && !isPlaceholderEtsyUrl(data.etsyUrl);
+---
+
+<article
+  class="product-card"
+  data-product-card
+  data-name={data.title.toLowerCase()}
+  data-category={data.category}
+  data-featured={String(data.featured)}
+  data-customizable={String(data.customizable)}
+  data-new={String(data.newProduct)}
+  data-price={data.numericPrice ?? ""}
+  data-date={data.dateAdded.toISOString()}
+>
+  <a class="product-image-link" href={`/products/${product.slug}/`} aria-label={`View details for ${data.title}`}>
+    <Image src={data.mainImage} alt={data.mainImageAlt} width={720} height={540} loading="lazy" />
+  </a>
+  <div class="product-card-body">
+    <div class="product-meta-row">
+      <span class="eyebrow">{data.category.replaceAll("-", " ")}</span>
+      {data.newProduct && <span class="badge">New</span>}
+    </div>
+    <h3><a href={`/products/${product.slug}/`}>{data.title}</a></h3>
+    <p>{data.shortDescription}</p>
+    <div class="product-card-actions">
+      <strong>{data.priceDisplay}</strong>
+      {data.customizable && <span class="badge badge-muted">Customizable</span>}
+    </div>
+    <div class="button-row">
+      <a class="button button-secondary" href={`/products/${product.slug}/`}>View Details</a>
+      {canOrder ? (
+        <EtsyButton href={data.etsyUrl} productName={data.title} />
+      ) : (
+        <a class="button button-primary" href="/contact/">Ask About This</a>
+      )}
+    </div>
+  </div>
+</article>

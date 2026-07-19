@@ -1,0 +1,29 @@
+---
+import { siteConfig } from "@/config/site";
+
+type Props = {
+  href?: string;
+  label?: string;
+  productName?: string;
+  linkType?: "etsy-product" | "etsy-shop" | "etsy-message";
+  variant?: "primary" | "secondary";
+};
+
+const href = Astro.props.href || siteConfig.etsyShopUrl;
+const label = Astro.props.label || "Order on Etsy";
+const linkType = Astro.props.linkType || "etsy-product";
+const variant = Astro.props.variant || "primary";
+---
+
+<a
+  class:list={["button", variant === "secondary" ? "button-secondary" : "button-primary"]}
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`${label} (opens Etsy in a new tab)`}
+  data-product-name={Astro.props.productName}
+  data-link-type={linkType}
+>
+  {label}
+  <span aria-hidden="true">↗</span>
+</a>

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ProductGrid from "@/components/ProductGrid.astro";
+import { getOrderedCategories, getVisibleProducts } from "@/lib/content";
+
+export async function getStaticPaths() {
+  const categories = await getOrderedCategories();
+  return categories.map((category) => ({
+    params: { category: category.data.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const products = (await getVisibleProducts()).filter((product) => product.data.category === category.data.slug);
+---
+
+<BaseLayout
+  title={category.data.seoTitle || `${category.data.name} | TKO Custom Creations`}
+  description={category.data.seoDescription || category.data.shortDescription}
+  canonicalPath={`/shop/${category.data.slug}/`}
+>
+  <section class="page-hero compact">
+    <div class="container">
+      <Breadcrumbs items={[{ label: "Shop", href: "/shop/" }, { label: category.data.name }]} />
+      <p class="eyebrow">Category</p>
+      <h1>{category.data.name}</h1>
+      <p>{category.data.fullDescription || category.data.shortDescription}</p>
+      <a class="button button-secondary" href="/shop/">Back to All Products</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <ProductGrid products={products} />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,12 @@
+---
+const { title = "Features", items = [] } = Astro.props as { title?: string; items?: string[] };
+---
+
+{items.length > 0 && (
+  <section class="detail-section">
+    <h2>{title}</h2>
+    <ul class="check-list">
+      {items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+)}

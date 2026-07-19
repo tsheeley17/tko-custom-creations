@@ -1,0 +1,11 @@
+{
+  "name": "Custom Drinkware",
+  "slug": "custom-drinkware",
+  "shortDescription": "Personalized tumblers and drinkware for gifts, groups, and daily use.",
+  "fullDescription": "Custom drinkware can include names, simple graphics, organization marks, and other approved artwork when available.",
+  "image": "../../assets/categories/custom-drinkware.jpg",
+  "featured": true,
+  "order": 60,
+  "seoTitle": "Custom Drinkware | TKO Custom Creations",
+  "seoDescription": "Browse personalized tumblers and custom drinkware from TKO Custom Creations."
+}

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EtsyButton from "@/components/EtsyButton.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+import { siteConfig } from "@/config/site";
+---
+
+<BaseLayout title="Custom Orders | TKO Custom Creations" description="Learn about custom engraving, modified storage layouts, personalized drinkware, bulk orders, and custom product requests.">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Custom Work</p>
+      <h1>Custom Orders and Personalization</h1>
+      <p>Availability depends on the product, material, design complexity, and production schedule.</p>
+      <EtsyButton label="Message Through Etsy" linkType="etsy-message" />
+    </div>
+  </section>
+  <section class="section">
+    <div class="container feature-grid">
+      {["Custom laser engraving", "Personalized tumblers and drinkware", "Modified storage layouts", "Custom colors", "Custom text or logos", "Product sizing adjustments", "Bulk orders", "Organizational or fraternal products"].map((item) => (
+        <article><h2>{item}</h2><p>Share the product, intended use, quantity, preferred timing, and any artwork requirements so the request can be reviewed.</p></article>
+      ))}
+    </div>
+  </section>
+  <section class="section section-muted">
+    <div class="container split-grid">
+      <div>
+        <h2>Before Sending Artwork</h2>
+        <p>Customers must have permission to use any logos, artwork, trademarks, or copyrighted material they submit. Not every design request can be completed.</p>
+      </div>
+      <div class="feature-panel">
+        <h3>Contact Methods</h3>
+        <p><a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a></p>
+        <EtsyButton label="Visit Etsy Shop" linkType="etsy-shop" variant="secondary" />
+        <SocialLinks />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

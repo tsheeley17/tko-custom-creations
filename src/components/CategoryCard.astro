@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+
+const { category } = Astro.props;
+const data = category.data;
+---
+
+<article class="category-card">
+  <a href={`/shop/${data.slug}/`} aria-label={`Shop ${data.name}`}>
+    {data.image && <Image src={data.image} alt="" width={640} height={420} loading="lazy" />}
+    <span>
+      <strong>{data.name}</strong>
+      <small>{data.shortDescription}</small>
+    </span>
+  </a>
+</article>

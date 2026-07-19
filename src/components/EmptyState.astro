@@ -1,0 +1,9 @@
+---
+const { hidden = false } = Astro.props;
+---
+
+<div class="empty-state" data-empty-state hidden={hidden}>
+  <h2>No products found</h2>
+  <p>Try a different search term, clear a filter, or visit the Etsy shop for the latest available listings.</p>
+  <a class="button button-secondary" href="/shop/">Reset Shop</a>
+</div>

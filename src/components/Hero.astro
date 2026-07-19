@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import heroImage from "@/assets/brand/workshop-hero.jpg";
+import EtsyButton from "@/components/EtsyButton.astro";
+---
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">3D printed goods, engraving, and practical custom work</p>
+      <h1>Custom-Made Storage, Gifts, and Engraved Products</h1>
+      <p>
+        Practical 3D-printed products, personalized engravings, and custom creations made for everyday use.
+        Browse the collection and order securely through Etsy.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="/shop/">Shop Our Products</a>
+        <EtsyButton label="Visit Our Etsy Shop" linkType="etsy-shop" variant="secondary" />
+      </div>
+    </div>
+    <div class="hero-media">
+      <Image src={heroImage} alt="TKO Custom Creations sample products arranged on a workbench" width={1100} height={820} loading="eager" />
+    </div>
+  </div>
+</section>

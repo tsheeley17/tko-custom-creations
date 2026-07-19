@@ -1,0 +1,24 @@
+{
+  "name": "tko-custom-creations-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsx scripts/validate-products.ts && astro build",
+    "preview": "astro preview",
+    "validate": "tsx scripts/validate-products.ts",
+    "import:etsy": "tsx scripts/import-etsy-listings.ts",
+    "import:etsy-images": "tsx scripts/import-etsy-images.ts"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^4.16.0",
+    "sharp": "^0.35.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}

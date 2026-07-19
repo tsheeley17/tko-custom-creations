@@ -1,0 +1,19 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EtsyButton from "@/components/EtsyButton.astro";
+---
+
+<BaseLayout title="Page Not Found | TKO Custom Creations" description="The page could not be found." robots="noindex, follow">
+  <section class="page-hero compact">
+    <div class="container center">
+      <p class="eyebrow">404</p>
+      <h1>That Page Was Not Found</h1>
+      <p>The product or page may have moved. Try the homepage, the shop, or the Etsy storefront.</p>
+      <div class="button-row centered">
+        <a class="button button-primary" href="/">Homepage</a>
+        <a class="button button-secondary" href="/shop/">Shop</a>
+        <EtsyButton label="Visit Etsy Shop" linkType="etsy-shop" variant="secondary" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

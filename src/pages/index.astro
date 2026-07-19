@@ -1,0 +1,110 @@
+---
+import Hero from "@/components/Hero.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProductGrid from "@/components/ProductGrid.astro";
+import CategoryCard from "@/components/CategoryCard.astro";
+import TestimonialCard from "@/components/TestimonialCard.astro";
+import EtsyButton from "@/components/EtsyButton.astro";
+import { siteConfig } from "@/config/site";
+import { getOrderedCategories, getVisibleProducts } from "@/lib/content";
+
+const products = await getVisibleProducts();
+const featuredProducts = products.filter((product) => product.data.featured).slice(0, 8);
+const categories = (await getOrderedCategories()).filter((category) => category.data.featured);
+const organizationJson = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: siteConfig.businessName,
+  url: siteConfig.siteUrl,
+  sameAs: [siteConfig.etsyShopUrl, siteConfig.facebookUrl, siteConfig.instagramUrl],
+  description: siteConfig.shortDescription,
+};
+---
+
+<BaseLayout canonicalPath="/">
+  <Hero />
+
+  <section class="section">
+    <div class="container section-heading">
+      <p class="eyebrow">Featured Products</p>
+      <h2>Shop Practical, Custom-Made Pieces</h2>
+      <p>Sample products are included to show the catalog layout. Replace them with real Etsy listings before launch.</p>
+    </div>
+    <div class="container">
+      <ProductGrid products={featuredProducts} />
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container section-heading">
+      <p class="eyebrow">Shop by Category</p>
+      <h2>Find the Right Fit Faster</h2>
+    </div>
+    <div class="container category-grid">
+      {categories.map((category) => <CategoryCard category={category} />)}
+    </div>
+  </section>
+
+  <section class="section split-section">
+    <div class="container split-grid">
+      <div>
+        <p class="eyebrow">Custom Creations</p>
+        <h2>Need a Different Size, Color, Layout, or Engraving?</h2>
+        <p>
+          Custom sizes, colors, engravings, layouts, and other adjustments may be available depending on
+          the product, material, design complexity, and production schedule.
+        </p>
+        <a class="button button-primary" href="/custom-orders/">Request a Custom Order</a>
+      </div>
+      <div class="feature-panel">
+        <h3>Why Choose TKO Custom Creations</h3>
+        <ul class="check-list">
+          <li>Made with care</li>
+          <li>Practical designs</li>
+          <li>Customization available</li>
+          <li>Secure Etsy checkout</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container section-heading">
+      <p class="eyebrow">Ordering</p>
+      <h2>How Ordering Works</h2>
+    </div>
+    <div class="container steps-grid">
+      <article><span>1</span><h3>Browse Products</h3><p>Use this site to compare products, categories, and details.</p></article>
+      <article><span>2</span><h3>Select Order on Etsy</h3><p>Each product links to its corresponding Etsy listing when available.</p></article>
+      <article><span>3</span><h3>Complete Checkout</h3><p>Choose options and complete checkout securely through Etsy.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading">
+      <p class="eyebrow">Reviews</p>
+      <h2>Placeholder Testimonials</h2>
+      <p>These are placeholders only and should be replaced with approved real review excerpts later.</p>
+    </div>
+    <div class="container testimonial-grid">
+      {/* Add real Etsy review excerpts here only after the owner approves the exact text and attribution. */}
+      <TestimonialCard quote="Placeholder review copy for a practical, well-made custom product." label="Placeholder customer review" />
+      <TestimonialCard quote="Placeholder review copy about clear communication and useful customization." label="Placeholder customer review" />
+      <TestimonialCard quote="Placeholder review copy about careful packaging and dependable fit." label="Placeholder customer review" />
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container">
+      <p class="eyebrow">Ready to Browse?</p>
+      <h2>Find a Product or Start a Custom Request</h2>
+      <div class="button-row centered">
+        <a class="button button-primary" href="/shop/">Browse All Products</a>
+        <EtsyButton label="Visit Etsy Shop" linkType="etsy-shop" variant="secondary" />
+        <a class="button button-secondary" href="/custom-orders/">Request a Custom Order</a>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationJson)} />
+</BaseLayout>

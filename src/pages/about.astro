@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import workshop from "@/assets/about/workshop-placeholder.jpg";
+import equipment from "@/assets/about/equipment-placeholder.jpg";
+import process from "@/assets/about/process-placeholder.jpg";
+---
+
+<BaseLayout title="About TKO Custom Creations" description="Learn about TKO Custom Creations, a small business focused on practical 3D-printed products, engraving, and personalized custom work.">
+  <section class="page-hero compact">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h1>Practical Products, Personalized Details</h1>
+      <p>Editable placeholder copy for a small business making useful 3D-printed products, laser-engraved items, and custom creations.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container split-grid">
+      <div class="prose">
+        <h2>What TKO Makes</h2>
+        <p>TKO Custom Creations focuses on practical storage products, personalized gifts, engraving-ready pieces, and custom work that balances fit, function, and everyday usefulness.</p>
+        <p>Replace this copy with the owner’s preferred wording. Avoid adding founding dates, production locations, customer counts, awards, or other claims unless they are verified.</p>
+        <h2>Capabilities</h2>
+        <p>The catalog can highlight 3D-printing capabilities, laser-engraving options, small-business production, and attention to customization and customer service.</p>
+      </div>
+      <Image src={workshop} alt="Placeholder workshop photograph for TKO Custom Creations" width={900} height={675} />
+    </div>
+  </section>
+  <section class="section section-muted">
+    <div class="container media-grid">
+      <Image src={equipment} alt="Placeholder equipment photograph" width={900} height={675} />
+      <Image src={process} alt="Placeholder product-making photograph" width={900} height={675} />
+    </div>
+  </section>
+</BaseLayout>

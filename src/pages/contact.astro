@@ -1,0 +1,34 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EtsyButton from "@/components/EtsyButton.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+import { siteConfig } from "@/config/site";
+---
+
+<BaseLayout title="Contact | TKO Custom Creations" description="Contact TKO Custom Creations through Etsy messages, email, Facebook, or Instagram for product questions and custom-order requests.">
+  <section class="page-hero compact">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Questions or Custom Requests</h1>
+      <p>Send the product name, what you want changed, any size or color preferences, and the timing you have in mind.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container contact-grid">
+      <article>
+        <h2>Email</h2>
+        <p><a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a></p>
+      </article>
+      <article>
+        <h2>Etsy</h2>
+        <p>Use Etsy messages for product questions tied to a listing or order.</p>
+        <EtsyButton label="Message Through Etsy" linkType="etsy-message" />
+        <EtsyButton label="Visit Etsy Shop" linkType="etsy-shop" variant="secondary" />
+      </article>
+      <article>
+        <h2>Social</h2>
+        <SocialLinks />
+      </article>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,12 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ProductCard from "@/components/ProductCard.astro";
+import EmptyState from "@/components/EmptyState.astro";
+
+const { products } = Astro.props as { products: CollectionEntry<"products">[] };
+---
+
+<div class="product-grid" data-product-grid>
+  {products.length ? products.map((product) => <ProductCard product={product} />) : <EmptyState />}
+</div>
+<EmptyState hidden />

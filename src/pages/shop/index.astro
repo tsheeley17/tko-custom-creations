@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProductFilters from "@/components/ProductFilters.astro";
+import ProductGrid from "@/components/ProductGrid.astro";
+import { getOrderedCategories, getVisibleProducts } from "@/lib/content";
+
+const products = await getVisibleProducts();
+const categories = await getOrderedCategories();
+---
+
+<BaseLayout
+  title="Shop Products | TKO Custom Creations"
+  description="Browse TKO Custom Creations products by category, feature, customization availability, and price."
+  canonicalPath="/shop/"
+>
+  <section class="page-hero compact">
+    <div class="container">
+      <p class="eyebrow">Product Catalog</p>
+      <h1>Shop TKO Custom Creations</h1>
+      <p>Browse products here, then use each listing link to order securely through Etsy.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container shop-layout">
+      <ProductFilters categories={categories} />
+      <ProductGrid products={products} />
+    </div>
+  </section>
+</BaseLayout>

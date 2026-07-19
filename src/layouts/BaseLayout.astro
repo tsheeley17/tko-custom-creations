@@ -1,0 +1,33 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Analytics from "@/components/Analytics.astro";
+import SEOHead from "@/components/SEOHead.astro";
+import "@/styles/global.css";
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  image?: string;
+  robots?: string;
+};
+
+const { title, description, canonicalPath, image, robots } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEOHead title={title} description={description} canonicalPath={canonicalPath} image={image} robots={robots} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+    <Analytics />
+  </body>
+</html>

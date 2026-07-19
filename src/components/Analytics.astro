@@ -1,0 +1,9 @@
+---
+import { siteConfig } from "@/config/site";
+---
+
+{siteConfig.analyticsEnabled && (
+  <script>
+    console.info("Analytics is enabled in siteConfig. Add the selected provider script here.");
+  </script>
+)}

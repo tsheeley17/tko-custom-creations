@@ -1,0 +1,8 @@
+---
+type Props = { label?: string; compact?: boolean };
+const label = Astro.props.label || "Product photo placeholder";
+---
+
+<div class:list={["placeholder-image", Astro.props.compact && "placeholder-image-compact"]} role="img" aria-label={label}>
+  <span>{label}</span>
+</div>

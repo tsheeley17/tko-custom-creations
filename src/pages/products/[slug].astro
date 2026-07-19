@@ -1,0 +1,134 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import EtsyButton from "@/components/EtsyButton.astro";
+import FeatureList from "@/components/FeatureList.astro";
+import ImageGallery from "@/components/ImageGallery.astro";
+import ProductGrid from "@/components/ProductGrid.astro";
+import { siteConfig } from "@/config/site";
+import { getOrderedCategories, getVisibleProducts, isPlaceholderEtsyUrl } from "@/lib/content";
+
+export async function getStaticPaths() {
+  const products = await getVisibleProducts();
+  return products.map((product) => ({
+    params: { slug: product.slug },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+const { Content } = await product.render();
+const categories = await getOrderedCategories();
+const category = categories.find((item) => item.data.slug === product.data.category);
+const relatedProducts = (await getVisibleProducts())
+  .filter((item) => item.slug !== product.slug && item.data.category === product.data.category)
+  .slice(0, 3);
+const data = product.data;
+const canOrder = data.status === "active" && !isPlaceholderEtsyUrl(data.etsyUrl);
+const productJson = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: data.title,
+  description: data.shortDescription,
+  image: new URL(data.mainImage.src, siteConfig.siteUrl).toString(),
+  brand: { "@type": "Brand", name: siteConfig.businessName },
+  category: category?.data.name,
+  ...(data.numericPrice && canOrder
+    ? {
+        offers: {
+          "@type": "Offer",
+          price: data.numericPrice,
+          priceCurrency: "USD",
+          url: data.etsyUrl,
+          availability: "https://schema.org/InStock",
+        },
+      }
+    : {}),
+};
+---
+
+<BaseLayout
+  title={data.seoTitle || `${data.title} | TKO Custom Creations`}
+  description={data.seoDescription || data.shortDescription}
+  canonicalPath={`/products/${product.slug}/`}
+>
+  <section class="product-detail">
+    <div class="container">
+      <Breadcrumbs items={[{ label: "Shop", href: "/shop/" }, ...(category ? [{ label: category.data.name, href: `/shop/${category.data.slug}/` }] : []), { label: data.title }]} />
+      <div class="product-detail-grid">
+        <ImageGallery product={product} />
+        <div class="product-summary">
+          <p class="eyebrow">{category?.data.name || data.category}</p>
+          <h1>{data.title}</h1>
+          <p class="lead">{data.shortDescription}</p>
+          <p class="price">{data.priceDisplay}</p>
+          <div class="tag-row">
+            {data.newProduct && <span class="badge">New</span>}
+            {data.customizable && <span class="badge badge-muted">Customizable</span>}
+            <span class="badge badge-muted">{data.status.replace("-", " ")}</span>
+          </div>
+          <div class="button-stack">
+            {canOrder ? (
+              <EtsyButton href={data.etsyUrl} productName={data.title} />
+            ) : (
+              <a class="button button-primary" href="/contact/">Message Us About This Product</a>
+            )}
+            <p class="etsy-note">You will be taken to Etsy to select your options and complete checkout securely.</p>
+            <a href="/custom-orders/">Message Us About Customization</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-grid">
+      <article class="product-copy">
+        <h2>Product Description</h2>
+        <div class="prose">
+          <Content />
+        </div>
+        {data.disclaimer && <p class="important-note">{data.disclaimer}</p>}
+        {data.customizable && <p class="important-note">Please review the Etsy listing for currently available personalization, color, and sizing options.</p>}
+      </article>
+      <aside class="details-panel">
+        <h2>Product Details</h2>
+        <dl>
+          <dt>Category</dt><dd>{category?.data.name || data.category}</dd>
+          <dt>Materials</dt><dd>{data.materials.join(", ") || "Review required"}</dd>
+          <dt>Dimensions</dt><dd>{data.dimensions.join("; ") || "Review required"}</dd>
+          <dt>Colors</dt><dd>{data.colors.join(", ") || "See Etsy listing"}</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="container">
+    <FeatureList title="Key Features" items={data.features} />
+    <FeatureList title="What Is Included" items={data.includes} />
+  </div>
+
+  <section class="section final-cta">
+    <div class="container">
+      <h2>Ready to Order or Customize?</h2>
+      <p>Ordering and current options are handled through Etsy so details stay tied to the live listing.</p>
+      <div class="button-row centered">
+        {canOrder ? <EtsyButton href={data.etsyUrl} productName={data.title} /> : <a class="button button-primary" href="/contact/">Ask About Availability</a>}
+        <a class="button button-secondary" href="/custom-orders/">Custom Order Info</a>
+      </div>
+    </div>
+  </section>
+
+  {relatedProducts.length > 0 && (
+    <section class="section">
+      <div class="container section-heading">
+        <h2>Related Products</h2>
+      </div>
+      <div class="container">
+        <ProductGrid products={relatedProducts} />
+      </div>
+    </section>
+  )}
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(productJson)} />
+</BaseLayout>

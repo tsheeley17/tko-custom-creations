@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TKO">
+  <rect width="64" height="64" rx="8" fill="#30343a"/>
+  <rect x="7" y="7" width="50" height="50" rx="4" fill="none" stroke="#b75f32" stroke-width="4"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fbfaf6">TKO</text>
+</svg>
