@@ -1,66 +1,64 @@
 ---
 title: "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware"
-shortDescription: "Step into the shadows of Darkmoor… Where ancient castles rise against storm-lit skies and legendary creatures still linger in the night.."
-category: "storage-organization"
+shortDescription: "Step into the shadows of Darkmoor… Where ancient castles rise against storm-lit skies and legendary creatures still linger in the night. This 20oz."
+category: "custom-drinkware"
 priceDisplay: "USD 27.95"
 numericPrice: 27.95
-etsyUrl: "https://www.etsy.com/listing/REPLACE-ME"
-featured: false
-newProduct: false
+etsyUrl: "https://www.etsy.com/listing/4473501122/classic-monsters-tumbler-laser-engraved"
+featured: true
+newProduct: true
 customizable: false
-status: "draft"
-mainImage: "../../assets/products/placeholders/product-placeholder.jpg"
-mainImageAlt: "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo placeholder"
-gallery: []
-galleryAlt: []
-materials: []
+status: "active"
+mainImage: "../../assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/hero.jpg"
+mainImageAlt: "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo 1"
+gallery:
+  - "../../assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-01.jpg"
+  - "../../assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-02.jpg"
+  - "../../assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-03.jpg"
+  - "../../assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-04.jpg"
+galleryAlt:
+  - "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo 2"
+  - "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo 3"
+  - "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo 4"
+  - "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware product photo 5"
+materials:
+  - "Stainless steel"
 dimensions: []
 colors: []
-features: []
+features:
+  - "Classic monsters"
+  - "Horror tumbler"
+  - "Gothic tumbler"
+  - "Vampire cup"
+  - "Monster drinkware"
+  - "Dark aesthetic"
 includes: []
 tags:
-  - "classic_monsters"
-  - "horror_tumbler"
-  - "gothic_tumbler"
-  - "vampire_cup"
-  - "monster_drinkware"
-  - "dark_aesthetic"
-  - "spooky_cup"
-  - "halloween_tumbler"
-  - "gothic_castle"
+  - "classic monsters"
+  - "horror tumbler"
+  - "gothic tumbler"
+  - "vampire cup"
+  - "monster drinkware"
+  - "dark aesthetic"
+  - "spooky cup"
+  - "halloween tumbler"
+  - "gothic castle"
   - "darkmoor"
-  - "laser_engraved_cup"
-  - "horror_fan_gift"
-  - "gothic_castle_cup"
-dateAdded: 2026-07-19
+  - "laser engraved cup"
+  - "horror fan gift"
+  - "gothic castle cup"
+dateAdded: 2026-07-18
 seoTitle: "Classic Monsters Tumbler | Laser Engraved Gothic Castle Drinkware | TKO Custom Creations"
 seoDescription: "Step into the shadows of Darkmoor… Where ancient castles rise against storm-lit skies and legendary creatures still linger in the night. This 20oz."
+disclaimer: ""
 sku: ""
-listingId: ""
+listingId: "4473501122"
 reviewRequired:
-  - "Product title"
-  - "Description"
-  - "Price"
-  - "Etsy URL"
-  - "Category"
-  - "Materials"
-  - "Dimensions"
-  - "Image order"
-  - "Alt text"
-  - "Disclaimers"
-  - "Customization options"
-etsyImageUrls:
-  - "https://i.etsystatic.com/37868193/r/il/5f10a4/7863448743/il_fullxfull.7863448743_fr3k.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/a7148c/7863449093/il_fullxfull.7863449093_ib8r.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/e5b525/7863456003/il_fullxfull.7863456003_flbk.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/abd282/7863456011/il_fullxfull.7863456011_22ky.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/7517f6/7863456013/il_fullxfull.7863456013_7d21.jpg"
-importedImageTargets:
-  - "src/assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/hero.jpg"
-  - "src/assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-01.jpg"
-  - "src/assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-02.jpg"
-  - "src/assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-03.jpg"
-  - "src/assets/products/classic-monsters-tumbler-laser-engraved-gothic-castle-drinkware/gallery-04.jpg"
+  - "Confirm category"
+  - "Confirm dimensions"
+  - "Confirm image order"
+  - "Confirm alt text"
+  - "Confirm customization options"
 ---
 
 Step into the shadows of Darkmoor…

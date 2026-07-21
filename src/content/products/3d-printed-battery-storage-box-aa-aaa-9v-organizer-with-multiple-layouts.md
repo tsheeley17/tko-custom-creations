@@ -1,63 +1,64 @@
 ---
 title: "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts"
-shortDescription: "Keep loose batteries organized, protected, and easy to find with this compact 3D printed battery storage box. Choose from several interior."
-category: "storage-organization"
+shortDescription: "Keep loose batteries organized, protected, and easy to find with this compact 3D printed battery storage box. Choose from several interior layouts."
+category: "ammunition-storage-range-accessories"
 priceDisplay: "USD 14.95"
 numericPrice: 14.95
-etsyUrl: "https://www.etsy.com/listing/REPLACE-ME"
-featured: false
-newProduct: false
+etsyUrl: "https://www.etsy.com/listing/4535954725/3d-printed-battery-storage-box-aa-aaa-9v"
+featured: true
+newProduct: true
 customizable: false
-status: "draft"
-mainImage: "../../assets/products/placeholders/product-placeholder.jpg"
-mainImageAlt: "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts product photo placeholder"
-gallery: []
-galleryAlt: []
+status: "active"
+mainImage: "../../assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/hero.jpg"
+mainImageAlt: "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts product photo 1"
+gallery:
+  - "../../assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/gallery-01.jpg"
+  - "../../assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/gallery-02.jpg"
+galleryAlt:
+  - "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts product photo 2"
+  - "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts product photo 3"
 materials:
   - "PLA"
 dimensions: []
-colors: []
-features: []
+colors:
+  - "COLOR OPTIONS\n━━━━━━━━━━━━━━━━━━━━"
+  - "Available in select colors, including the bright pink shown in the listing photos."
+  - "color combinations, or patterns may be available upon request. Please send a message before ordering so availability can be confirmed."
+  - "color variation may occur between filament batches, lighting, and screen displays"
+features:
+  - "Battery organizer"
+  - "Battery storage box"
+  - "AA battery holder"
+  - "AAA battery holder"
+  - "9V battery holder"
+  - "Battery case"
 includes: []
 tags:
-  - "battery_organizer"
-  - "battery_storage_box"
-  - "AA_battery_holder"
-  - "AAA_battery_holder"
-  - "9V_battery_holder"
-  - "battery_case"
-  - "battery_container"
-  - "battery_keeper"
-  - "3D_printed_storage"
-  - "household_organizer"
-  - "emergency_kit_box"
-  - "toolbox_organizer"
-  - "battery_holder_box"
-dateAdded: 2026-07-19
+  - "battery organizer"
+  - "battery storage box"
+  - "AA battery holder"
+  - "AAA battery holder"
+  - "9V battery holder"
+  - "battery case"
+  - "battery container"
+  - "battery keeper"
+  - "3D printed storage"
+  - "household organizer"
+  - "emergency kit box"
+  - "toolbox organizer"
+  - "battery holder box"
+dateAdded: 2026-07-15
 seoTitle: "3D Printed Battery Storage Box – AA, AAA, 9V Organizer with Multiple Layouts | TKO Custom Creations"
 seoDescription: "Keep loose batteries organized, protected, and easy to find with this compact 3D printed battery storage box. Choose from several interior layouts."
+disclaimer: "Storage container only. Ammunition and accessories shown in demonstration photographs are not included. PLA products should not be left in high heat, direct sunlight, dishwashers, or hot vehicles unless the Etsy listing says otherwise."
 sku: ""
-listingId: ""
+listingId: "4535954725"
 reviewRequired:
-  - "Product title"
-  - "Description"
-  - "Price"
-  - "Etsy URL"
-  - "Category"
-  - "Materials"
-  - "Dimensions"
-  - "Image order"
-  - "Alt text"
-  - "Disclaimers"
-  - "Customization options"
-etsyImageUrls:
-  - "https://i.etsystatic.com/37868193/r/il/4064fe/8285689835/il_fullxfull.8285689835_av1g.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/3201b6/8237794976/il_fullxfull.8237794976_7juq.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/58115d/8237794978/il_fullxfull.8237794978_f4xu.jpg"
-importedImageTargets:
-  - "src/assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/hero.jpg"
-  - "src/assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/gallery-01.jpg"
-  - "src/assets/products/3d-printed-battery-storage-box-aa-aaa-9v-organizer-with-multiple-layouts/gallery-02.jpg"
+  - "Confirm category"
+  - "Confirm dimensions"
+  - "Confirm image order"
+  - "Confirm alt text"
+  - "Confirm customization options"
 ---
 
 Keep loose batteries organized, protected, and easy to find with this compact 3D printed battery storage box. Choose from several interior layouts designed for AA, AAA, and 9V batteries, including single-size and mixed configurations.

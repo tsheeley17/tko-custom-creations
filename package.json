@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "validate": "tsx scripts/validate-products.ts",
     "import:etsy": "tsx scripts/import-etsy-listings.ts",
-    "import:etsy-images": "tsx scripts/import-etsy-images.ts"
+    "import:etsy-images": "tsx scripts/import-etsy-images.ts",
+    "import:etsy-folder": "tsx scripts/import-etsy-export-folder.ts"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",

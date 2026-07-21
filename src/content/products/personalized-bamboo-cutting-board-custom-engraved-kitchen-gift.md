@@ -1,72 +1,73 @@
 ---
 title: "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift"
-shortDescription: "🎁 A Meaningful Gift That Lasts Create a one-of-a-kind piece for the kitchen with a beautifully engraved bamboo cutting board. Whether."
-category: "storage-organization"
+shortDescription: "🎁 A Meaningful Gift That Lasts Create a one-of-a-kind piece for the kitchen with a beautifully engraved bamboo cutting board. Whether it’s a."
+category: "personalized-gifts"
 priceDisplay: "USD 21.99"
 numericPrice: 21.99
-etsyUrl: "https://www.etsy.com/listing/REPLACE-ME"
+etsyUrl: "https://www.etsy.com/listing/4478796047/personalized-bamboo-cutting-board-custom"
 featured: false
 newProduct: false
-customizable: false
-status: "draft"
-mainImage: "../../assets/products/placeholders/product-placeholder.jpg"
-mainImageAlt: "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo placeholder"
-gallery: []
-galleryAlt: []
+customizable: true
+status: "active"
+mainImage: "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/hero.jpg"
+mainImageAlt: "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 1"
+gallery:
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-01.jpg"
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-02.jpg"
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-03.jpg"
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-04.jpg"
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-05.jpg"
+  - "../../assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-06.jpg"
+galleryAlt:
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 2"
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 3"
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 4"
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 5"
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 6"
+  - "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift product photo 7"
 materials:
+  - "PLA"
   - "Bamboo"
-  - "Wood"
-dimensions: []
-colors: []
-features: []
+dimensions:
+  - "Small – 8.5 x 11 inches"
+  - "Medium – 11 x 14.5 inches ⭐ Most Popular"
+  - "Large – 12 x 17.5 inches"
+colors:
+  - "color may vary slightly due to natural bamboo"
+features:
+  - "Custom cutting board"
+  - "Wedding gift"
+  - "Housewarming gift"
+  - "Kitchen gift"
+  - "Bamboo cutting board"
+  - "Custom kitchen decor"
 includes: []
 tags:
-  - "custom_cutting_board"
-  - "wedding_gift"
-  - "housewarming_gift"
-  - "kitchen_gift"
-  - "bamboo_cutting_board"
-  - "custom_kitchen_decor"
-  - "gift_for_couple"
-  - "engraved_gift"
-  - "family_name_sign"
-  - "custom_name_board"
-  - "rustic_kitchen_gift"
-  - "personalized_cutting"
-  - "gift_for_married"
-dateAdded: 2026-07-19
+  - "custom cutting board"
+  - "wedding gift"
+  - "housewarming gift"
+  - "kitchen gift"
+  - "bamboo cutting board"
+  - "custom kitchen decor"
+  - "gift for couple"
+  - "engraved gift"
+  - "family name sign"
+  - "custom name board"
+  - "rustic kitchen gift"
+  - "personalized cutting"
+  - "gift for married"
+dateAdded: 2026-04-07
 seoTitle: "Personalized Bamboo Cutting Board, Custom Engraved Kitchen Gift | TKO Custom Creations"
 seoDescription: "🎁 A Meaningful Gift That Lasts Create a one-of-a-kind piece for the kitchen with a beautifully engraved bamboo cutting board. Whether it’s a wedding."
+disclaimer: "PLA products should not be left in high heat, direct sunlight, dishwashers, or hot vehicles unless the Etsy listing says otherwise. Customers must have permission to use any submitted logos, artwork, trademarks, or copyrighted material."
 sku: ""
-listingId: ""
+listingId: "4478796047"
 reviewRequired:
-  - "Product title"
-  - "Description"
-  - "Price"
-  - "Etsy URL"
-  - "Category"
-  - "Materials"
-  - "Dimensions"
-  - "Image order"
-  - "Alt text"
-  - "Disclaimers"
-  - "Customization options"
-etsyImageUrls:
-  - "https://i.etsystatic.com/37868193/r/il/1ce48d/7898188185/il_fullxfull.7898188185_mua7.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/d87b06/7911972402/il_fullxfull.7911972402_dg7g.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/5cc243/7898190713/il_fullxfull.7898190713_snm8.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/0991a8/7898188187/il_fullxfull.7898188187_6i5w.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/5a3675/7898201669/il_fullxfull.7898201669_rypu.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/d76170/7898201671/il_fullxfull.7898201671_dii4.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/1efec0/7911974516/il_fullxfull.7911974516_9dt4.jpg"
-importedImageTargets:
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/hero.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-01.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-02.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-03.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-04.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-05.jpg"
-  - "src/assets/products/personalized-bamboo-cutting-board-custom-engraved-kitchen-gift/gallery-06.jpg"
+  - "Confirm category"
+  - "Confirm dimensions"
+  - "Confirm image order"
+  - "Confirm alt text"
+  - "Confirm customization options"
 ---
 
 🎁 A Meaningful Gift That Lasts

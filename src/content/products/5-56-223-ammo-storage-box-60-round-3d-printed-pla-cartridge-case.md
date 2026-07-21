@@ -1,70 +1,67 @@
 ---
 title: "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case"
-shortDescription: "Keep your 5.56 / .223 cartridges organized with this custom 3D printed ammo storage box. Each box is designed to hold up to 60 rounds and."
-category: "storage-organization"
+shortDescription: "Keep your 5.56 / .223 cartridges organized with this custom 3D printed ammo storage box. Each box is designed to hold up to 60 rounds and is a."
+category: "ammunition-storage-range-accessories"
 priceDisplay: "USD 14.95"
 numericPrice: 14.95
-etsyUrl: "https://www.etsy.com/listing/REPLACE-ME"
+etsyUrl: "https://www.etsy.com/listing/4530738292/556-223-ammo-storage-box-60-round-3d"
 featured: false
-newProduct: false
-customizable: false
-status: "draft"
-mainImage: "../../assets/products/placeholders/product-placeholder.jpg"
-mainImageAlt: "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo placeholder"
-gallery: []
-galleryAlt: []
+newProduct: true
+customizable: true
+status: "active"
+mainImage: "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/hero.jpg"
+mainImageAlt: "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 1"
+gallery:
+  - "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-01.jpg"
+  - "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-02.jpg"
+  - "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-03.jpg"
+  - "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-04.jpg"
+  - "../../assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-05.jpg"
+galleryAlt:
+  - "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 2"
+  - "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 3"
+  - "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 4"
+  - "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 5"
+  - "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case product photo 6"
 materials:
-  - "Plastic"
   - "PLA"
-dimensions: []
+dimensions:
+  - "Keep your 5.56 / .223 cartridges organized with this custom 3D printed ammo storage box. Each box is designed to hold up to 60 rounds and is a practical option for organizing cartridges on a shelf, bench, cabinet, or range bag."
 colors: []
-features: []
+features:
+  - "Ammo storage box"
+  - "Empty ammo box"
+  - "223 ammo box"
+  - "556 ammo box"
+  - "556 storage box"
+  - "Cartridge box"
 includes: []
 tags:
-  - "ammo_storage_box"
-  - "empty_ammo_box"
-  - "223_ammo_box"
-  - "556_ammo_box"
-  - "556_storage_box"
-  - "cartridge_box"
-  - "rifle_ammo_box"
-  - "range_organizer"
-  - "safe_organizer"
-  - "custom_ammo_box"
-  - "pla_storage_box"
-  - "3d_printed"
-  - "3d_printed_box"
-dateAdded: 2026-07-19
+  - "ammo storage box"
+  - "empty ammo box"
+  - "223 ammo box"
+  - "556 ammo box"
+  - "556 storage box"
+  - "cartridge box"
+  - "rifle ammo box"
+  - "range organizer"
+  - "safe organizer"
+  - "custom ammo box"
+  - "pla storage box"
+  - "3d printed"
+  - "3d printed box"
+dateAdded: 2026-07-15
 seoTitle: "5.56 / .223 Ammo Storage Box | 60 Round 3D Printed PLA Cartridge Case | TKO Custom Creations"
 seoDescription: "Keep your 5.56 / .223 cartridges organized with this custom 3D printed ammo storage box. Each box is designed to hold up to 60 rounds and is a practical."
+disclaimer: "Storage container only. Ammunition and accessories shown in demonstration photographs are not included. PLA products should not be left in high heat, direct sunlight, dishwashers, or hot vehicles unless the Etsy listing says otherwise. Customers must have permission to use any submitted logos, artwork, trademarks, or copyrighted material."
 sku: ""
-listingId: ""
+listingId: "4530738292"
 reviewRequired:
-  - "Product title"
-  - "Description"
-  - "Price"
-  - "Etsy URL"
-  - "Category"
-  - "Materials"
-  - "Dimensions"
-  - "Image order"
-  - "Alt text"
-  - "Disclaimers"
-  - "Customization options"
-etsyImageUrls:
-  - "https://i.etsystatic.com/37868193/r/il/be2b59/8198401200/il_fullxfull.8198401200_akju.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/d6fc2f/8246325419/il_fullxfull.8246325419_sztm.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/cd5339/8246325243/il_fullxfull.8246325243_gomb.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/cd8f8b/8198406444/il_fullxfull.8198406444_kyy9.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/7f5419/8198402062/il_fullxfull.8198402062_k7r5.jpg"
-  - "https://i.etsystatic.com/37868193/r/il/2b5d5d/8198402066/il_fullxfull.8198402066_kh6i.jpg"
-importedImageTargets:
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/hero.jpg"
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-01.jpg"
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-02.jpg"
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-03.jpg"
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-04.jpg"
-  - "src/assets/products/5-56-223-ammo-storage-box-60-round-3d-printed-pla-cartridge-case/gallery-05.jpg"
+  - "Confirm category"
+  - "Confirm dimensions"
+  - "Confirm image order"
+  - "Confirm alt text"
+  - "Confirm customization options"
 ---
 
 Keep your 5.56 / .223 cartridges organized with this custom 3D printed ammo storage box. Each box is designed to hold up to 60 rounds and is a practical option for organizing cartridges on a shelf, bench, cabinet, or range bag.
