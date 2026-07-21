@@ -1,12 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import logo from "@/assets/brand/tko-website-logo.png";
 import { siteConfig } from "@/config/site";
 ---
 
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="TKO Custom Creations home">
-      <span class="brand-mark">TKO</span>
-      <span class="brand-name">Custom Creations</span>
+      <Image class="brand-logo" src={logo} alt="" width={320} height={158} loading="eager" />
     </a>
     <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
       <span></span>
